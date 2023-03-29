@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row" style="min-height: 100vh;">
+        <div class="col-lg-6 login-bg">
+
+            <div class="container" style="margin-top: 2rem">
+                <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <image src="{{url_for("static", filename="images/logo-highres.png")}}" style="width:12rem">
+                </div>
+                </div>
+
+                <div class="row justify-content-center mt-3">
+                    <div class="col-md-12 consolas-font color-white" style="text-align: justify; padding:2rem">
+                        <p> Welcome to <span style="color:#1dff1d"> Game of Papers </span>, 
+                            the revolutionary machine learning model 
+                            that's transforming scientific paper searches! Our app streamlines the
+                            research process, delivering personalized recommendations based on your 
+                            selected paper. With superior accuracy and lightning-fast results, 
+                            Game of Papers outperforms competitors. Say goodbye to hours of endless 
+                            searching and let Game of Papers guide you to the future of scientific research. 
+                            Start exploring today!<p>
+                    </div>
+                    </div>
+            </div> 
+
+        </div>
+
+        <div class="col-lg-6 consolas-font">
+            <div class="container" style="margin-top: 5rem">
+                <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-block">Submit</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>  
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

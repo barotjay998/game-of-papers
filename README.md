@@ -1,5 +1,5 @@
 # Flask API Documentation
-This is a simple Flask API for managing documents and generating recommended similar documents.
+This is API for managing documents and generating recommended similar documents.
 
 # API Endpoints
 

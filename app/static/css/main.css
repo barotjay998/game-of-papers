@@ -1,0 +1,28 @@
+.navbar {
+    font-weight: 700;
+}
+
+.color-white {
+    color: white;
+}
+
+.navbar-bg {
+    background-color: #161b22;
+}
+
+.footer {
+    background-color: #161b22;
+    padding: 10px;
+}
+
+.consolas-font {
+    font-family: Consolas, monospace;
+}
+
+.conf-content {
+    background-color: #161b22;
+}
+
+.login-bg {
+    background-color: #33383e;
+}
