@@ -16,19 +16,16 @@
 
     <!-- Loading static files -->
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title> Game of Papers </title>
 
 </head>
 <body>
 
-<nav class="navbar navbar-bg justify-content-between consolas-font color-white">
-    <a class="navbar-brand"> <image src="{{url_for("static", filename="images/logo.png")}}" style="width:9%"> Game of Papers </a>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-warning btn-md my-2 my-sm-0" type="submit">Search</button>   
-    </form>
-</nav>
-
+{% include "header.html" %}
 
 {% block content %}
 
